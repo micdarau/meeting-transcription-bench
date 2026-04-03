@@ -1,0 +1,47 @@
+{
+  "segments": [
+    {
+      "speaker": "Speaker 1",
+      "start": 0.0,
+      "end": 2.8,
+      "text": "Alright, let's do a quick standup."
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 3.1,
+      "end": 7.4,
+      "text": "Sure. Yesterday I finished the authentication refactor and pushed it to staging."
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 7.8,
+      "end": 10.2,
+      "text": "Nice. Any issues with the OAuth flow?"
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 10.5,
+      "end": 15.9,
+      "text": "One edge case with expired refresh tokens. I added a retry with exponential backoff. Tests pass now."
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 16.2,
+      "end": 20.1,
+      "text": "Good. I'm working on the recording API integration today. Should have a PR up by end of day."
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 20.4,
+      "end": 23.6,
+      "text": "Want me to review it? I have some bandwidth this afternoon."
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 23.9,
+      "end": 25.8,
+      "text": "That would be great. I'll ping you when it's ready."
+    }
+  ],
+  "full_text": "Alright, let's do a quick standup. Sure. Yesterday I finished the authentication refactor and pushed it to staging. Nice. Any issues with the OAuth flow? One edge case with expired refresh tokens. I added a retry with exponential backoff. Tests pass now. Good. I'm working on the recording API integration today. Should have a PR up by end of day. Want me to review it? I have some bandwidth this afternoon. That would be great. I'll ping you when it's ready."
+}

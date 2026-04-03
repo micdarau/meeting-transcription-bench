@@ -1,0 +1,59 @@
+{
+  "segments": [
+    {
+      "speaker": "Speaker 1",
+      "start": 0.0,
+      "end": 3.5,
+      "text": "Thanks for joining. I want to walk you through how our platform handles recording."
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 3.8,
+      "end": 7.2,
+      "text": "Sounds good. We're evaluating three vendors right now, so this is timely."
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 7.5,
+      "end": 13.1,
+      "text": "Great. So we process about two million meeting minutes per month. Latency is under 800 milliseconds for real-time transcription."
+    },
+    {
+      "speaker": "Speaker 3",
+      "start": 13.4,
+      "end": 16.8,
+      "text": "What's the accuracy on technical calls? Our engineers use a lot of jargon."
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 17.1,
+      "end": 22.4,
+      "text": "We see around 4.5 percent word error rate on technical meetings. We can fine-tune the vocabulary for your domain."
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": 22.7,
+      "end": 26.3,
+      "text": "What about HIPAA compliance? Some of our teams are in healthcare."
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 26.6,
+      "end": 31.0,
+      "text": "Fully compliant. We sign BAAs, data is encrypted at rest and in transit, and we can deploy in your VPC."
+    },
+    {
+      "speaker": "Speaker 3",
+      "start": 31.3,
+      "end": 34.5,
+      "text": "That's what we need. Can you send over the pricing breakdown after this?"
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": 34.8,
+      "end": 37.2,
+      "text": "Absolutely. I'll have it in your inbox by end of day."
+    }
+  ],
+  "full_text": "Thanks for joining. I want to walk you through how our platform handles recording. Sounds good. We're evaluating three vendors right now, so this is timely. Great. So we process about two million meeting minutes per month. Latency is under 800 milliseconds for real-time transcription. What's the accuracy on technical calls? Our engineers use a lot of jargon. We see around 4.5 percent word error rate on technical meetings. We can fine-tune the vocabulary for your domain. What about HIPAA compliance? Some of our teams are in healthcare. Fully compliant. We sign BAAs, data is encrypted at rest and in transit, and we can deploy in your VPC. That's what we need. Can you send over the pricing breakdown after this? Absolutely. I'll have it in your inbox by end of day."
+}
