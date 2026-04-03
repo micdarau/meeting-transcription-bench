@@ -38,7 +38,8 @@ class AssemblyAIAdapter(BaseAdapter):
             transcript_resp.raise_for_status()
             transcript_id = transcript_resp.json()["id"]
 
-            while True:
+            max_polls = 60
+            for _ in range(max_polls):
                 poll_resp = await client.get(
                     f"{self.BASE_URL}/transcript/{transcript_id}",
                     headers=headers,
@@ -52,6 +53,10 @@ class AssemblyAIAdapter(BaseAdapter):
                 if status == "error":
                     raise RuntimeError(f"AssemblyAI error: {status_data.get('error')}")
                 await asyncio.sleep(3)
+            else:
+                raise RuntimeError(
+                    f"AssemblyAI polling timed out after {max_polls} attempts"
+                )
 
         utterances = status_data.get("utterances", [])
         segments = []

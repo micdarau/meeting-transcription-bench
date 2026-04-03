@@ -2,6 +2,8 @@ import re
 
 from jiwer import wer
 
+PRICING_LAST_UPDATED = "2026-04-03"
+
 PRICING_PER_HOUR_USD: dict[str, float] = {
     "deepgram": 0.22,
     "assemblyai": 0.30,

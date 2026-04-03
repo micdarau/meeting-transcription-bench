@@ -32,7 +32,8 @@ class RevAIAdapter(BaseAdapter):
             resp.raise_for_status()
             job_id = resp.json()["id"]
 
-            while True:
+            max_polls = 60
+            for _ in range(max_polls):
                 poll_resp = await client.get(
                     f"{self.BASE_URL}/jobs/{job_id}",
                     headers=headers,
@@ -46,6 +47,10 @@ class RevAIAdapter(BaseAdapter):
                 if status == "failed":
                     raise RuntimeError(f"Rev AI error: {job.get('failure_detail')}")
                 await asyncio.sleep(3)
+            else:
+                raise RuntimeError(
+                    f"Rev AI polling timed out after {max_polls} attempts"
+                )
 
             transcript_resp = await client.get(
                 f"{self.BASE_URL}/jobs/{job_id}/transcript",

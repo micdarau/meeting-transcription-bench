@@ -1,6 +1,7 @@
 from rich.console import Console
 from rich.table import Table
 
+from .metrics import PRICING_LAST_UPDATED
 from .types import BenchmarkReport
 
 
@@ -21,6 +22,8 @@ def format_markdown(report: BenchmarkReport) -> str:
         row = f"| {r.adapter_name} | {r.sample_name} | {r.wer:.1%}"
         row += f" | {diar} | {r.latency_seconds:.1f} | {cost} |"
         lines.append(row)
+    lines.append("")
+    lines.append(f"_Pricing data last updated: {PRICING_LAST_UPDATED}_")
     return "\n".join(lines)
 
 
